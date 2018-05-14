@@ -1,7 +1,7 @@
 class CategoryExtractor
   include ParserHelper
   BASE_URL = 'https://www.viovet.co.uk'.freeze
-  HEADER_CSV = %w(Name Amount Image DeliveryDate Code).freeze
+  HEADER_CSV = %w[Name Amount Image DeliveryDate Code].freeze
 
   def initialize(category_url, filename = 'extracted_data')
     @current_page = save_page(category_url)
