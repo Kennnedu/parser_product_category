@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
+require 'byebug'
 require 'nokogiri'
 require 'open-uri'
-require 'xpath'
 require 'csv'
-require 'pry'
-require_relative 'application_base'
-require_relative 'parser_products'
-require_relative 'product'
-require_relative 'multiproduct'
+require_relative 'parser_helper'
+require_relative 'category_extractor'
+require_relative 'product_extractor'
+require_relative 'multiproduct_extractor'
 
-ParserProducts.new(ARGV[0], ARGV[1]).parse
+CategoryExtractor.call(ARGV[0], ARGV[1])

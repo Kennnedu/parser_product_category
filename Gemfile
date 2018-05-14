@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'nokogiri'
-gem 'rubocop'
+gem 'byebug'
+gem 'nokogiri', '~> 1.8.2'
+gem 'rubocop', '~> 0.49.0'
