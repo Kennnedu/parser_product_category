@@ -16,9 +16,10 @@ class CategoryExtractor
 
   def call
     extract_multiproducts
-    return unless exist_next_page?
-    @current_page = save_page(extract_next_url)
-    call
+    # TODO: parse only one page
+    # return unless exist_next_page?
+    # @current_page = save_page(extract_next_url)
+    # call
   end
 
   private
